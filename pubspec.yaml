@@ -29,42 +29,27 @@ flutter:
     - assets/icons/
 
   fonts:
-    - family: OpenSans-Bold
+    - family: Lexend-Black
       fonts:
-        - asset: assets/fonts/OpenSans-Bold.ttf
-    - family: OpenSans-BoldItalic
+        - asset: assets/fonts/Lexend-Black.ttf
+    - family: Lexend-Bold
       fonts:
-        - asset: assets/fonts/OpenSans-BoldItalic.ttf
-    - family: OpenSans-ExtraBold
+        - asset: assets/fonts/Lexend-Bold.ttf
+    - family: Lexend-ExtraBold
       fonts:
-        - asset: assets/fonts/OpenSans-ExtraBold.ttf
-    - family: OpenSans-ExtraBoldItalic
+        - asset: assets/fonts/Lexend-ExtraBold.ttf
+    - family: Lexend-ExtraLight
       fonts:
-        - asset: assets/fonts/OpenSans-ExtraBoldItalic.ttf
-    - family: OpenSans-Italic
+        - asset: assets/fonts/Lexend-ExtraLight.ttf
+    - family: Lexend-Light
       fonts:
-        - asset: assets/fonts/OpenSans-Italic.ttf
-    - family: OpenSans-Light
+        - asset: assets/fonts/Lexend-Light.ttf
+    - family: Lexend-Medium
       fonts:
-        - asset: assets/fonts/OpenSans-Light.ttf
-    - family: OpenSans-LightItalic
+        - asset: assets/fonts/Lexend-Medium.ttf
+    - family: Lexend-Regular
       fonts:
-        - asset: assets/fonts/OpenSans-LightItalic.ttf
-    - family: OpenSans-Medium
+        - asset: assets/fonts/Lexend-Regular.ttf
+    - family: Lexend-SemiBold
       fonts:
-        - asset: assets/fonts/OpenSans-Medium.ttf
-    - family: OpenSans-MediumItalic
-      fonts:
-        - asset: assets/fonts/OpenSans-MediumItalic.ttf
-    - family: OpenSans-Regular
-      fonts:
-        - asset: assets/fonts/OpenSans-Regular.ttf
-    - family: OpenSans-SemiBold
-      fonts:
-        - asset: assets/fonts/OpenSans-SemiBold.ttf
-    - family: OpenSans-SemiBoldItalic
-      fonts:
-        - asset: assets/fonts/OpenSans-SemiBoldItalic.ttf
-    - family: Questrial-Regular
-      fonts:
-        - asset: assets/fonts/Questrial-Regular.ttf
+        - asset: assets/fonts/Lexend-SemiBold.ttf
