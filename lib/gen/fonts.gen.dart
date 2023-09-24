@@ -10,42 +10,27 @@
 class FontFamily {
   FontFamily._();
 
-  /// Font family: OpenSans-Bold
-  static const String openSansBold = 'OpenSans-Bold';
+  /// Font family: Lexend-Black
+  static const String lexendBlack = 'Lexend-Black';
 
-  /// Font family: OpenSans-BoldItalic
-  static const String openSansBoldItalic = 'OpenSans-BoldItalic';
+  /// Font family: Lexend-Bold
+  static const String lexendBold = 'Lexend-Bold';
 
-  /// Font family: OpenSans-ExtraBold
-  static const String openSansExtraBold = 'OpenSans-ExtraBold';
+  /// Font family: Lexend-ExtraBold
+  static const String lexendExtraBold = 'Lexend-ExtraBold';
 
-  /// Font family: OpenSans-ExtraBoldItalic
-  static const String openSansExtraBoldItalic = 'OpenSans-ExtraBoldItalic';
+  /// Font family: Lexend-ExtraLight
+  static const String lexendExtraLight = 'Lexend-ExtraLight';
 
-  /// Font family: OpenSans-Italic
-  static const String openSansItalic = 'OpenSans-Italic';
+  /// Font family: Lexend-Light
+  static const String lexendLight = 'Lexend-Light';
 
-  /// Font family: OpenSans-Light
-  static const String openSansLight = 'OpenSans-Light';
+  /// Font family: Lexend-Medium
+  static const String lexendMedium = 'Lexend-Medium';
 
-  /// Font family: OpenSans-LightItalic
-  static const String openSansLightItalic = 'OpenSans-LightItalic';
+  /// Font family: Lexend-Regular
+  static const String lexendRegular = 'Lexend-Regular';
 
-  /// Font family: OpenSans-Medium
-  static const String openSansMedium = 'OpenSans-Medium';
-
-  /// Font family: OpenSans-MediumItalic
-  static const String openSansMediumItalic = 'OpenSans-MediumItalic';
-
-  /// Font family: OpenSans-Regular
-  static const String openSansRegular = 'OpenSans-Regular';
-
-  /// Font family: OpenSans-SemiBold
-  static const String openSansSemiBold = 'OpenSans-SemiBold';
-
-  /// Font family: OpenSans-SemiBoldItalic
-  static const String openSansSemiBoldItalic = 'OpenSans-SemiBoldItalic';
-
-  /// Font family: Questrial-Regular
-  static const String questrialRegular = 'Questrial-Regular';
+  /// Font family: Lexend-SemiBold
+  static const String lexendSemiBold = 'Lexend-SemiBold';
 }

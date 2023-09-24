@@ -2,6 +2,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:vappr_tech_task/gen/assets.gen.dart';
+import 'package:vappr_tech_task/gen/fonts.gen.dart';
 import 'package:vappr_tech_task/modules/home/%20controllers/home.controller.dart';
 
 class HomeView extends GetView<HomeController> {
@@ -14,14 +15,13 @@ class HomeView extends GetView<HomeController> {
     return Scaffold(
         extendBodyBehindAppBar: true,
         appBar: AppBar(
-          forceMaterialTransparency: true,
-          iconTheme: const IconThemeData(color: Colors.white),
-          leading: const Icon(Icons.arrow_downward),
-          actions: const [
-            Icon(Icons.favorite_outline_outlined),
-            SizedBox(width: 10)
-          ],
-        ),
+            forceMaterialTransparency: true,
+            iconTheme: const IconThemeData(color: Colors.white),
+            leading: const Icon(Icons.arrow_downward),
+            actions: const [
+              Icon(Icons.favorite_outline_outlined),
+              SizedBox(width: 10)
+            ]),
         body: SizedBox.expand(
           child: Stack(
             fit: StackFit.expand,
@@ -58,20 +58,20 @@ class HomeView extends GetView<HomeController> {
                           children: [
                             Text('Eiffel Tower',
                                 style: TextStyle(
+                                    fontFamily: FontFamily.lexendExtraBold,
                                     fontSize: 18,
                                     fontWeight: FontWeight.bold,
                                     color: Colors.white)),
                             Row(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
-                                  Icon(
-                                    Icons.location_on_outlined,
-                                    color: Colors.white,
-                                    size: 18,
-                                  ),
+                                  Icon(Icons.location_on_outlined,
+                                      color: Colors.white, size: 18),
                                   Text('Paris, France',
                                       style: TextStyle(
-                                          fontSize: 10, color: Colors.white))
+                                          fontFamily: FontFamily.lexendBold,
+                                          fontSize: 10,
+                                          color: Colors.white))
                                 ])
                           ],
                         ),
@@ -115,6 +115,8 @@ class HomeView extends GetView<HomeController> {
                                         const SizedBox(height: 5),
                                         const Text('Eiffel Tower',
                                             style: TextStyle(
+                                                fontFamily:
+                                                    FontFamily.lexendExtraBold,
                                                 fontSize: 28,
                                                 fontWeight: FontWeight.bold,
                                                 color: Colors.white)),
@@ -123,6 +125,8 @@ class HomeView extends GetView<HomeController> {
                                               color: Colors.white),
                                           Text('Paris, France',
                                               style: TextStyle(
+                                                  fontFamily:
+                                                      FontFamily.lexendBlack,
                                                   color: Colors.white))
                                         ])
                                       ]),
@@ -185,9 +189,16 @@ class HomeView extends GetView<HomeController> {
                                 ),
                                 const SizedBox(height: 20),
                                 const Text(
-                                    'Paris\' monument-lined boulevards, museums classical bistros and boutiques are enhanced by a new wave of multimedia galleries, creative wine bars, design shops and tech start-ups.'),
+                                  'Paris\' monument-lined boulevards, museums classical bistros and boutiques are enhanced by a new wave of multimedia galleries, creative wine bars, design shops and tech start-ups.',
+                                  style: TextStyle(
+                                      fontFamily: FontFamily.lexendLight),
+                                ),
                                 const SizedBox(height: 20),
-                                const Text('READ MORE'),
+                                const Text(
+                                  'READ MORE',
+                                  style: TextStyle(
+                                      fontFamily: FontFamily.lexendBold),
+                                ),
                                 const SizedBox(height: 20),
                                 Container(
                                   height: 170,
@@ -213,17 +224,19 @@ class HomeView extends GetView<HomeController> {
                                 const Align(
                                   alignment: Alignment.centerLeft,
                                   child: Text('Top Sight',
-                                      style: TextStyle(fontSize: 24)),
+                                      style: TextStyle(
+                                          fontFamily: FontFamily.lexendLight,
+                                          fontSize: 24)),
                                 ),
                                 const SizedBox(height: 20),
                                 Row(
                                   children: [
                                     ClipRRect(
-                                      borderRadius: BorderRadius.circular(30),
+                                      borderRadius: BorderRadius.circular(25),
                                       child: Assets.images.tower3.image(
                                         fit: BoxFit.cover,
-                                        height: 100,
-                                        width: 180,
+                                        height: 90,
+                                        width: 160,
                                       ),
                                     ),
                                     const SizedBox(width: 20),
@@ -233,11 +246,17 @@ class HomeView extends GetView<HomeController> {
                                       children: [
                                         Text(
                                           'Musée du Louvre',
-                                          style: TextStyle(fontSize: 18),
+                                          style: TextStyle(
+                                              fontFamily:
+                                                  FontFamily.lexendMedium,
+                                              fontSize: 18),
                                         ),
                                         Text(
                                           'Top choice museum in\nLouvre & Lis Hales',
-                                          style: TextStyle(fontSize: 10),
+                                          style: TextStyle(
+                                              fontFamily:
+                                                  FontFamily.lexendMedium,
+                                              fontSize: 10),
                                         ),
                                         SizedBox(height: 20),
                                       ],
@@ -264,24 +283,26 @@ class HomeView extends GetView<HomeController> {
             ),
             onPressed: () {},
             label: AnimatedSwitcher(
-              duration: controller.duration200Mil,
-              transitionBuilder: (Widget child, Animation<double> animation) =>
-                  FadeTransition(
-                opacity: animation,
-                child: SizeTransition(
-                  sizeFactor: animation,
-                  axis: Axis.horizontal,
-                  child: child,
-                ),
-              ),
-              child: controller.showDestination.value
-                  ? Assets.icons.planeIcon.image(height: 50, width: 40)
-                  : Row(
-                      children: [
+                duration: controller.duration200Mil,
+                transitionBuilder:
+                    (Widget child, Animation<double> animation) =>
+                        FadeTransition(
+                          opacity: animation,
+                          child: SizeTransition(
+                            sizeFactor: animation,
+                            axis: Axis.horizontal,
+                            child: child,
+                          ),
+                        ),
+                child: controller.showDestination.value
+                    ? Assets.icons.planeIcon.image(height: 50, width: 40)
+                    : Row(children: [
                         Assets.icons.planeIcon.image(height: 50),
                         const SizedBox(width: 20),
                         const Text('SEARCH FLIGHTS',
-                            style: TextStyle(color: Colors.white)),
+                            style: TextStyle(
+                                fontFamily: FontFamily.lexendExtraBold,
+                                color: Colors.white)),
                         const SizedBox(width: 20),
                         ElevatedButton(
                             onPressed: () {},
@@ -290,9 +311,9 @@ class HomeView extends GetView<HomeController> {
                                     MaterialStateProperty.all(Colors.white),
                                 backgroundColor: MaterialStateProperty.all(
                                     const Color(0xFF18A957))),
-                            child: const Text('ON SALE'))
-                      ],
-                    ),
-            ))));
+                            child: const Text('ON SALE',
+                                style: TextStyle(
+                                    fontFamily: FontFamily.lexendExtraBold)))
+                      ])))));
   }
 }
