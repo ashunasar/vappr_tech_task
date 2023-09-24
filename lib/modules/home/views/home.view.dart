@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
+
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
@@ -11,6 +13,7 @@ class HomeView extends GetView<HomeController> {
   @override
   Widget build(BuildContext context) {
     double height = MediaQuery.of(context).size.height;
+    double width = MediaQuery.of(context).size.width;
     return Scaffold(
         extendBodyBehindAppBar: true,
         appBar: AppBar(
@@ -45,6 +48,37 @@ class HomeView extends GetView<HomeController> {
                     child: Container(
                       decoration:
                           BoxDecoration(color: Colors.white.withOpacity(0.0)),
+                    ),
+                  )),
+              Obx(() => AnimatedPositioned(
+                    top: !controller.showDestination.value ? 40 : 100,
+                    duration: Duration(milliseconds: 200),
+                    child: Visibility(
+                      visible: !controller.showDestination.value,
+                      child: SizedBox(
+                        width: width,
+                        child: Column(
+                          children: [
+                            const Text('Eiffel Tower',
+                                style: TextStyle(
+                                    fontSize: 18,
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white)),
+                            const Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Icon(
+                                    Icons.location_on_outlined,
+                                    color: Colors.white,
+                                    size: 18,
+                                  ),
+                                  Text('Paris, France',
+                                      style: TextStyle(
+                                          fontSize: 10, color: Colors.white))
+                                ])
+                          ],
+                        ),
+                      ),
                     ),
                   )),
               NotificationListener(

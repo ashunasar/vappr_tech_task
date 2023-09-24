@@ -9,7 +9,7 @@ class HomeController extends GetxController {
     Assets.images.tower2.path,
     Assets.images.tower4.path,
     Assets.images.tower5.path,
-    Assets.images.tower3.path,
+    Assets.images.tower3.path
   ];
 
   RxBool showDestination = RxBool(true);
