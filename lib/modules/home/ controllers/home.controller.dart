@@ -18,11 +18,11 @@ class HomeController extends GetxController {
       DraggableScrollableController();
 
   bool notificationHandler(DraggableScrollableNotification val) {
-    // AppLogger.printLog('maxExtent is ${val.maxExtent}');
-    // AppLogger.printLog('minExtent is ${val.minExtent}');
-    // AppLogger.printLog('extent is ${val.extent}');
+    AppLogger.printLog('maxExtent is ${val.maxExtent}');
+    AppLogger.printLog('minExtent is ${val.minExtent}');
+    AppLogger.printLog('extent is ${val.extent}');
 
-    showDestination(val.extent <= 0.41);
+    showDestination(val.extent <= 0.61);
 
     return false;
   }
