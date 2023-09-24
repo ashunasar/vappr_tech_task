@@ -14,6 +14,9 @@ class HomeController extends GetxController {
 
   RxBool showDestination = RxBool(true);
 
+  final Duration duration200Mil = const Duration(milliseconds: 200);
+  final Duration duration300Mil = const Duration(milliseconds: 300);
+
   DraggableScrollableController draggableScrollableController =
       DraggableScrollableController();
 

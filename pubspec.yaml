@@ -27,3 +27,44 @@ flutter:
   assets:
     - assets/images/
     - assets/icons/
+
+  fonts:
+    - family: OpenSans-Bold
+      fonts:
+        - asset: assets/fonts/OpenSans-Bold.ttf
+    - family: OpenSans-BoldItalic
+      fonts:
+        - asset: assets/fonts/OpenSans-BoldItalic.ttf
+    - family: OpenSans-ExtraBold
+      fonts:
+        - asset: assets/fonts/OpenSans-ExtraBold.ttf
+    - family: OpenSans-ExtraBoldItalic
+      fonts:
+        - asset: assets/fonts/OpenSans-ExtraBoldItalic.ttf
+    - family: OpenSans-Italic
+      fonts:
+        - asset: assets/fonts/OpenSans-Italic.ttf
+    - family: OpenSans-Light
+      fonts:
+        - asset: assets/fonts/OpenSans-Light.ttf
+    - family: OpenSans-LightItalic
+      fonts:
+        - asset: assets/fonts/OpenSans-LightItalic.ttf
+    - family: OpenSans-Medium
+      fonts:
+        - asset: assets/fonts/OpenSans-Medium.ttf
+    - family: OpenSans-MediumItalic
+      fonts:
+        - asset: assets/fonts/OpenSans-MediumItalic.ttf
+    - family: OpenSans-Regular
+      fonts:
+        - asset: assets/fonts/OpenSans-Regular.ttf
+    - family: OpenSans-SemiBold
+      fonts:
+        - asset: assets/fonts/OpenSans-SemiBold.ttf
+    - family: OpenSans-SemiBoldItalic
+      fonts:
+        - asset: assets/fonts/OpenSans-SemiBoldItalic.ttf
+    - family: Questrial-Regular
+      fonts:
+        - asset: assets/fonts/Questrial-Regular.ttf

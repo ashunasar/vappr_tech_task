@@ -1,7 +1,4 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
-
 import 'dart:ui';
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:vappr_tech_task/gen/assets.gen.dart';
@@ -33,7 +30,7 @@ class HomeView extends GetView<HomeController> {
                     padding: controller.showDestination.value
                         ? const EdgeInsets.only(bottom: 0)
                         : const EdgeInsets.only(bottom: 500.0),
-                    duration: const Duration(milliseconds: 200),
+                    duration: controller.duration200Mil,
                     child: BackdropFilter(
                       filter: ImageFilter.blur(sigmaX: 10.0, sigmaY: 10.0),
                       child: Assets.images.eiffelTower.image(
@@ -52,19 +49,19 @@ class HomeView extends GetView<HomeController> {
                   )),
               Obx(() => AnimatedPositioned(
                     top: !controller.showDestination.value ? 40 : 100,
-                    duration: Duration(milliseconds: 200),
+                    duration: controller.duration200Mil,
                     child: Visibility(
                       visible: !controller.showDestination.value,
                       child: SizedBox(
                         width: width,
-                        child: Column(
+                        child: const Column(
                           children: [
-                            const Text('Eiffel Tower',
+                            Text('Eiffel Tower',
                                 style: TextStyle(
                                     fontSize: 18,
                                     fontWeight: FontWeight.bold,
                                     color: Colors.white)),
-                            const Row(
+                            Row(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   Icon(
@@ -88,7 +85,7 @@ class HomeView extends GetView<HomeController> {
                   initialChildSize: 0.4,
                   minChildSize: 0.4,
                   maxChildSize: 0.88,
-                  snapAnimationDuration: const Duration(milliseconds: 300),
+                  snapAnimationDuration: controller.duration300Mil,
                   builder: (BuildContext context,
                       ScrollController scrollController) {
                     return SingleChildScrollView(
@@ -267,7 +264,7 @@ class HomeView extends GetView<HomeController> {
             ),
             onPressed: () {},
             label: AnimatedSwitcher(
-              duration: const Duration(milliseconds: 200),
+              duration: controller.duration200Mil,
               transitionBuilder: (Widget child, Animation<double> animation) =>
                   FadeTransition(
                 opacity: animation,
