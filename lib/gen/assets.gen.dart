@@ -9,6 +9,17 @@
 
 import 'package:flutter/widgets.dart';
 
+class $AssetsIconsGen {
+  const $AssetsIconsGen();
+
+  /// File path: assets/icons/plane_icon.png
+  AssetGenImage get planeIcon =>
+      const AssetGenImage('assets/icons/plane_icon.png');
+
+  /// List of all assets
+  List<AssetGenImage> get values => [planeIcon];
+}
+
 class $AssetsImagesGen {
   const $AssetsImagesGen();
 
@@ -16,13 +27,46 @@ class $AssetsImagesGen {
   AssetGenImage get eiffelTower =>
       const AssetGenImage('assets/images/Eiffel Tower.jpg');
 
+  /// File path: assets/images/image_sunset.png
+  AssetGenImage get imageSunset =>
+      const AssetGenImage('assets/images/image_sunset.png');
+
+  /// File path: assets/images/image_video.png
+  AssetGenImage get imageVideo =>
+      const AssetGenImage('assets/images/image_video.png');
+
+  /// File path: assets/images/tower1.jpg
+  AssetGenImage get tower1 => const AssetGenImage('assets/images/tower1.jpg');
+
+  /// File path: assets/images/tower2.jpg
+  AssetGenImage get tower2 => const AssetGenImage('assets/images/tower2.jpg');
+
+  /// File path: assets/images/tower3.jpg
+  AssetGenImage get tower3 => const AssetGenImage('assets/images/tower3.jpg');
+
+  /// File path: assets/images/tower4.jpg
+  AssetGenImage get tower4 => const AssetGenImage('assets/images/tower4.jpg');
+
+  /// File path: assets/images/tower5.jpg
+  AssetGenImage get tower5 => const AssetGenImage('assets/images/tower5.jpg');
+
   /// List of all assets
-  List<AssetGenImage> get values => [eiffelTower];
+  List<AssetGenImage> get values => [
+        eiffelTower,
+        imageSunset,
+        imageVideo,
+        tower1,
+        tower2,
+        tower3,
+        tower4,
+        tower5
+      ];
 }
 
 class Assets {
   Assets._();
 
+  static const $AssetsIconsGen icons = $AssetsIconsGen();
   static const $AssetsImagesGen images = $AssetsImagesGen();
 }
 
